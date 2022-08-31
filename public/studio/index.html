@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="https://cdn.sanity.io/images/5s3i3kwx/production/3053c8e4835a9d50297d7d6c759ad68a836db2a4-120x120.png?w=35&h=35&fit=crop" />
+  <title>Sanity Studio</title>
+  <style>
+    html {
+      background-color: #f1f3f6;
+    }
+    html,
+    body,
+    #sanity {
+      height: 100%;
+    }
+    body {
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+</head>
+<body>
+  <div id="sanity"></div>
+  <script type="module">
+    // import {createStudio} from 'http://localhost:3000/vX/blog.js'
+    import {createStudio} from 'https://5s3i3kwx.sanity.parts/vX/blog.js'
+    createStudio(document.querySelector('#sanity'), {projectId: '5s3i3kwx', dataset: 'production', title: 'Potatoes FYI'})
+  </script>
+</body>
+</html>
